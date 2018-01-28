@@ -1,0 +1,2 @@
+2018-01-28 19:11:23 WARNING (SyncWorker_6) [homeassistant.components.hue] Connected to Hue at 192.168.0.19 but not registered.
+2018-01-28 19:11:31 WARNING (SyncWorker_13) [plexapi] BadRequest (401) unauthorized http://192.168.0.3:32400/; <html><head><script>window.location = window.location.href.match(/(^.+\/)[^\/]*$/)[1] + 'web/index.html';</script><title>Unauthorized</title></head><body><h1>401 Unauthorized</h1></body></html>
