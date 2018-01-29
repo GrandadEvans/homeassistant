@@ -58,3 +58,4 @@ history_graph:       !include_dir_named history_graphs/
 media_player:        !include_dir_list media_players/
 notify:              !include_dir_list notify/
 joaoapps_join:       !include joaoapps_join.yaml
+tts:                 !include_dir_list tts_providers/
