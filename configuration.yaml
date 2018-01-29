@@ -16,37 +16,14 @@ http:
 updater:
   include_used_components: true
 
-# Discover some devices automatically
 discovery:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
-# Enables support for tracking state changes over time
 history:
-
-# View all events in a logbook
 logbook:
-
-# Enables a map showing the location of tracked devices
 map:
-
-# Track the sun
-sun:
-
-# Weather prediction
-sensor:
-  - platform: yr
-
-# Text to speech
-tts:
-  - platform: google
-
-# Cloud
 cloud:
-
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-
 recorder:
