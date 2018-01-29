@@ -1,0 +1,4 @@
+platform: samsungtv
+host: 192.168.0.18
+mac: !secret samsung_living_room_tv_mac
+name: TV
