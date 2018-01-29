@@ -1,0 +1,2 @@
+turn_main_light_off:
+  url: !secret rest_command_turn_main_light_off

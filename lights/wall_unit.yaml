@@ -1,0 +1,11 @@
+platform: mqtt
+name: "Wall Unit"
+state_topic: "stat/rooms/living/wall_unit/POWER"
+command_topic: "cmnd/rooms/living/wall_unit/POWER"
+availability_topic: "tele/rooms/living/wall_unit/LWT"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+payload_available: "Online"
+payload_not_available: "Offline"
+retain: true

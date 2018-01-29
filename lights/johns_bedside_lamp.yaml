@@ -1,0 +1,11 @@
+platform: mqtt
+name: "John's Bedside Lamp"
+state_topic: "stat/rooms/bedroom_main/lamp_john/POWER"
+command_topic: "cmnd/rooms/bedroom_main/lamp_john/POWER"
+availability_topic: "tele/rooms/bedroom_main/lamp_john/LWT"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+payload_available: "Online"
+payload_not_available: "Offline"
+retain: true

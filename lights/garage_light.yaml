@@ -1,0 +1,11 @@
+platform: mqtt
+name: "Garage Light"
+state_topic: "stat/rooms/garage/light/POWER"
+command_topic: "cmnd/rooms/garage/light/POWER"
+availability_topic: "tele/rooms/garage/light/LWT"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+payload_available: "Online"
+payload_not_available: "Offline"
+retain: true

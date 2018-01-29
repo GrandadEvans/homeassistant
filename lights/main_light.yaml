@@ -1,0 +1,8 @@
+platform: template
+lights:
+  main_light:
+    friendly_name: "Main Light"
+    turn_on:
+      service: rest_command.turn_main_light_on
+    turn_off:
+      service: rest_command.turn_main_light_off

@@ -33,4 +33,7 @@ weblink: !include weblinks.yaml
 zone: !include_dir_list zones/
 ifttt: !include ifttt.yaml
 duckdns: !include duckdns.yaml
+shopping_list:
+sun:
+light: !include_dir_list lights/
 
