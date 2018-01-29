@@ -1,0 +1,4 @@
+tvheadend:
+  title: TVHeadEnd
+  icon: mdi:television-classic
+  url: http://localhost:9981

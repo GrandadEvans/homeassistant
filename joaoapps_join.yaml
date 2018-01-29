@@ -1,0 +1,3 @@
+name: android
+device_id: !secret join_device_id
+api_key: !secret join_api_key
