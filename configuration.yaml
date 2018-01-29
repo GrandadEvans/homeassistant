@@ -36,4 +36,5 @@ duckdns: !include duckdns.yaml
 shopping_list:
 sun:
 light: !include_dir_list lights/
+switch:              !include_dir_list switches/
 

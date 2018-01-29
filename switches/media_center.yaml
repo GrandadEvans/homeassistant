@@ -1,0 +1,4 @@
+# TP-Link HS110
+platform: tplink
+host: 192.168.0.22
+name: media_center

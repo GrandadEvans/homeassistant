@@ -1,0 +1,11 @@
+platform: mqtt
+name: "Scooter"
+state_topic: "stat/rooms/garage/scooter/POWER"
+command_topic: "cmnd/rooms/garage/scooter/POWER"
+availability_topic: "tele/rooms/garage/scooter/LWT"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+payload_available: "Online"
+payload_not_available: "Offline"
+retain: true
