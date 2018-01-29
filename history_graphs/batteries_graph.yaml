@@ -1,0 +1,10 @@
+name: "Batteries Graph"
+entities:
+  #- sensor.battery_levels_ann
+  - sensor.battery_levels_john_mobile
+  - sensor.battery_levels_rowan_tablet
+  - sensor.battery_levels_ipad
+  - sensor.battery_levels_htc_wildfire
+hours_to_show: 24
+refresh: 120
+

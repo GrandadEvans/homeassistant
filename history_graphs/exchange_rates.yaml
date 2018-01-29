@@ -1,0 +1,7 @@
+name: "Exchange Rates"
+entities:
+  - sensor.gbp_usd
+  - sensor.gbp_eur
+hours_to_show: 240
+refresh: 300
+
