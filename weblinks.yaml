@@ -1,0 +1,17 @@
+entities:
+  - name: Router
+    url: http://192.168.0.1/
+    icon: mdi:router-wireless
+
+  - name: Home Assistant
+    url: https://home-assistant.io
+    icon: mdi:home-assistant
+
+  - name: Material Design Icons
+    url: https://materialdesignicons.com
+    icon: mdi:material-ui
+
+  - name: Available Components
+    url: https://home-assistant.io/components/#all
+    icon: mdi:home-assistant
+

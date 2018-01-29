@@ -1,0 +1,5 @@
+name: Gym
+latitude: !secret gym_lat
+longitude: !secret gym_lon
+radius: 250
+icon: mdi:dumbbell

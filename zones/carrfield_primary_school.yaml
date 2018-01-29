@@ -1,0 +1,5 @@
+name: Carrfield Primary School
+latitude: !secret carrfield_primary_school_lat
+longitude: !secret carrfield_primary_school_lon
+radius: 500
+icon: mdi:school

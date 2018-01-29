@@ -1,0 +1,5 @@
+name: Byron Wood School
+latitude: !secret byron_wood_school_lat
+longitude: !secret byron_wood_school_lon
+radius: 500
+icon: mdi:school

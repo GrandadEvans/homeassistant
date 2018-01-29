@@ -27,3 +27,10 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 recorder:
+
+mqtt: !include mqtt.yaml
+weblink: !include weblinks.yaml
+zone: !include_dir_list zones/
+ifttt: !include ifttt.yaml
+duckdns: !include duckdns.yaml
+

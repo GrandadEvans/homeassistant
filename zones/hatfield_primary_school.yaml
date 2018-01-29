@@ -1,0 +1,5 @@
+name: Hatfield Academy
+latitude: !secret hatfield_academy_lat
+longitude: !secret hatfield_academy_lon
+radius: 500
+icon: mdi:school

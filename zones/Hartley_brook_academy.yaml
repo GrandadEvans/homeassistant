@@ -1,0 +1,5 @@
+name: Hartley Brooke Academy
+latitude: !secret hartley_brook_academy_school_lat
+longitude: !secret hartley_brook_academy_school_lon
+radius: 500
+icon: mdi:school

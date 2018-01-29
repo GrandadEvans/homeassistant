@@ -1,0 +1,5 @@
+name: Gooseacre School
+latitude: !secret g_a_school_lat
+longitude: !secret g_a_school_lon
+radius: 500
+icon: mdi:school

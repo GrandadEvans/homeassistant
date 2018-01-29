@@ -1,0 +1,5 @@
+name: Burton Road School
+latitude: !secret b_r_school_lat
+longitude: !secret b_r_school_lon
+radius: 300
+icon: mdi:school
