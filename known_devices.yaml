@@ -1,0 +1,57 @@
+john_owntracks:
+  hide_if_away: false
+  mac:
+  name: "John Owntracks"
+  picture: !secret john_owntracks_picture
+  track: true
+  vendor:
+
+ann_zeroflte:
+  name: "Ann's Mobile"
+  mac: !secret ann_owntracks_mac
+  track: true
+  hide_if_away: false
+  gravatar: !secret ann_owntracks_gravatar
+
+john_ipad:
+  hide_if_away: false
+  #icon:
+  mac: !secret john_ipad_mac
+  name: "John's iPad"
+  picture: !secret john_ipad_picture
+  gravatar: !secret john_ipad_gravatar
+  track: true
+  #vendor:
+
+rowans_nmap:
+  hide_if_away: false
+  mac: !secret rowan_nmap_mac
+  name: "Rowan Wifi"
+  track: true
+
+5848227e2606:
+  hide_if_away: false
+  mac: !secret 5848227e2606_mac
+  name: "John Wifi"
+  picture: !secret 5848227e2606_picture
+  gravatar: !secret 5848227e2606_gravatar
+  track: true
+  vendor: Sony Mobile Communications AB
+
+john_e6853:
+  hide_if_away: false
+  icon:
+  mac:
+  name: john
+  picture:
+  track: true
+  vendor:
+
+john_rowanstabletowntracks:
+  hide_if_away: false
+  icon:
+  mac:
+  name: john
+  picture:
+  track: true
+  vendor:

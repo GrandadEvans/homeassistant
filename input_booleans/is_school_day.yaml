@@ -1,0 +1,5 @@
+is_school_day:
+  name: "Is tonight a School night?"
+  initial: on
+  icon: mdi:hotel
+

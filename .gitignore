@@ -3,3 +3,11 @@ tts
 secrets.yaml
 home-assistant.log
 home-assistant_v2.db
+.idea/
+
+# These are here due to having exposed keys etc
+.cloud/production_auth.json
+phue*
+plex.conf
+sms.yaml
+sms.html

@@ -1,0 +1,8 @@
+platform: imap
+server: !secret imap_server
+port: !secret imap_port
+username: !secret imap_username
+password: !secret imap_password
+name: "Webmail"
+folder: "INBOX"
+unit_of_measurement: "Unread"

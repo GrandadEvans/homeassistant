@@ -1,0 +1,4 @@
+host: 192.168.0.39
+name: stairs
+username: john
+password: !secret webcam_stairs_password

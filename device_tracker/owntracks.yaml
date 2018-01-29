@@ -1,0 +1,8 @@
+platform: owntracks
+max_gps_accuracy: 200
+consider_home: 0:03
+waypoints: true
+waypoint_whitelist:
+  - john
+  - ann
+  - rowan

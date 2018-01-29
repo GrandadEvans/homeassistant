@@ -1,0 +1,7 @@
+main_bedroom_light:
+  name: "Brightness"
+  initial: 75
+  min: 0
+  max: 100
+  step: 5
+  icon: mdi:light

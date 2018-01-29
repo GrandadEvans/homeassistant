@@ -1,0 +1,4 @@
+platform: google_travel_time
+api_key: !secret google_travel_time_api_key
+origin: zone.home
+destination: zone.carrfield_primary_school

@@ -1,0 +1,5 @@
+platform: mqtt
+name: "Rowan's (tablet) battery"
+state_topic: "devices/rowan/tablet/battery"
+qos: 1
+retain: true

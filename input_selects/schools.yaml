@@ -1,0 +1,11 @@
+schools:
+  name: "Schools"
+  options:
+    - 'Byron Wood'
+    - 'Carrfield Primary School'
+    - 'Goose Acre'
+    - 'Hartley Brook Academy'
+    - 'Hatfield Primary School'
+    - 'Hillside Bolder Street Primary'
+  initial: 'Goose Acre'
+  icon: mdi:school

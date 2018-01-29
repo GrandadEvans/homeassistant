@@ -1,0 +1,16 @@
+platform: mqtt
+friendly_name: "Garage Door"
+name: "garage_door"
+state_topic: "cmnd/rooms/garage/door/POWER1"
+value_template: >-
+  {% if value == 'ON' %}
+    Closed
+  {% else %}
+    Open
+  {% endif %}
+icon_template: >-
+  {% if value == 'ON' %}
+    mdi:garage
+  {% else %}
+    mdi:garage-open
+  {% endif %}

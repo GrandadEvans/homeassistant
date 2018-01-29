@@ -1,0 +1,6 @@
+platform: mqtt
+friendly_name: "Room Temperature"
+name: "Bedroom Rowan Temperature"
+state_topic: "tele/rooms/rowans/lava_lamp/SENSOR"
+unit_of_measurement: "C"
+value_template: "{{ value_json.SI7021.Temperature }}"

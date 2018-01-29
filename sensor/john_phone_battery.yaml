@@ -1,0 +1,5 @@
+platform: mqtt
+name: "John (mobile) battery"
+state_topic: "devices/john/z5/battery"
+qos: 1
+retain: true

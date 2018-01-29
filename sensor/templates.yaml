@@ -1,0 +1,172 @@
+platform: template
+sensors:
+  this_weeks_bin:
+    friendly_name: "This Weeks Bin"
+    value_template: >-
+      {% if states.sensor.weekofyear.state | int % 4 == 0 %}
+        Brown
+      {% elif states.sensor.weekofyear.state | int% 4 == 1 %}
+        Grey
+      {% elif states.sensor.weekofyear.state | int % 4 == 2 %}
+        Blue
+      {% else %}
+        Grey
+      {% endif %}
+    entity_picture_template: >
+      {% if states.sensor.weekofyear.state | int % 4 == 0 %}
+        /local/assets/images/bin_brown.png
+      {% elif states.sensor.weekofyear.state | int% 4 == 1 %}
+        /local/assets/images/bin_grey.png
+      {% elif states.sensor.weekofyear.state | int % 4 == 2 %}
+        /local/assets/images/bin_blue.png
+      {% else %}
+        /local/assets/images/bin_grey.png
+      {% endif %}
+
+  battery_levels_ipad:
+    friendly_name: "John's iPad"
+    unit_of_measurement: "%"
+    value_template: "{{ states.device_tracker.john_ipad.attributes.battery }}"
+    icon_template: >-
+      {% set battery_level_ipad = states.sensor.battery_levels_ipad.state|default(0)|int %}
+      {% set battery_round_ipad = (battery_level_ipad / 10) |int * 10 %}
+      {% if battery_round_ipad >= 100 %}
+        mdi:battery
+      {% elif battery_round_ipad >= 15 %}
+        mdi:battery-{{ battery_round_ipad }}
+      {% elif battery_round_ipad < 15 %}
+        mdi:battery-alert
+      {% else %}
+        mdi:battery-unkown
+      {% endif %}
+
+  battery_levels_john_mobile:
+    friendly_name: "John's Mobile"
+    unit_of_measurement: "%"
+    value_template: "{{ states.sensor.john_mobile_battery.state }}"
+    icon_template: >-
+      {% set battery_level_john_mobile = states.sensor.battery_levels_john_mobile.state|default(0)|int %}
+      {% set battery_round_john_mobile = (battery_level_john_mobile / 10) |int * 10 %}
+      {% if battery_round_john_mobile >= 100 %}
+        mdi:battery
+      {% elif battery_round_john_mobile >= 15 %}
+        mdi:battery-{{ battery_round_john_mobile }}
+      {% elif battery_round_john_mobile < 15 %}
+        mdi:battery-alert
+      {% else %}
+        mdi:battery-unknown
+      {% endif %}
+
+  battery_levels_rowan_tablet:
+    friendly_name: "Rowan's Tablet"
+    unit_of_measurement: "%"
+    value_template: "{{ states.sensor.rowans_tablet_battery.state }}"
+    icon_template: >-
+      {% set battery_level_rowan_tablet = states.sensor.battery_levels_rowan_tablet.state|default(0)|int %}
+      {% set battery_round_rowan_tablet = (battery_level_rowan_tablet / 10) |int * 10 %}
+      {% if battery_round_rowan_tablet >= 100 %}
+        mdi:battery
+      {% elif battery_round_rowan_tablet >= 15 %}
+        mdi:battery-{{ battery_round_rowan_tablet }}
+      {% elif battery_round_rowan_tablet < 15 %}
+        mdi:battery-alert
+      {% else %}
+        mdi:battery-unknown
+      {% endif %}
+
+  battery_levels_htc_wildfire:
+    friendly_name: "HTC Wildfire Phone"
+    unit_of_measurement: "%"
+    value_template: "{{ states.sensor.stairs_battery_level.state }}"
+    icon_template: >-
+      {% set stairs_battery_level = states.sensor.stairs_battery_level.state|default(0)|int %}
+      {% set stairs_battery_round_level = (stairs_battery_level / 10) |int * 10 %}
+      {% if stairs_battery_round_level >= 100 %}
+        mdi:battery
+      {% elif stairs_battery_round_level >= 15 %}
+        mdi:battery-{{ stairs_battery_round_level }}
+      {% elif stairs_battery_round_level < 15 %}
+        mdi:battery-alert
+      {% else %}
+        mdi:battery-unknown
+      {% endif %}
+
+  next_sunrise:
+    friendly_name: 'Next Sunrise'
+    icon_template: "mdi:weather-sunset-up"
+    value_template: "{{ as_timestamp(states.sun.sun.attributes.next_rising) | timestamp_custom('%H:%M') }}"
+
+  next_sunset:
+    friendly_name: 'Next Sunset'
+    icon_template: "mdi:weather-sunset-down"
+    value_template: "{{ as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_custom('%H:%M') }}"
+
+  dayofyear:
+    friendly_name: 'Day Number'
+    icon_template: "mdi:calendar-today"
+    value_template: "{{ now().strftime('%j') }}"
+
+  weekofyear:
+    friendly_name: 'Week Number'
+    icon_template: "mdi:calendar-range"
+    value_template: "{{ now().strftime('%W') }}"
+
+
+###################################################
+# Cloned entities to provide group specific names #
+###################################################
+
+  clone__sensor__broadlink_sensor_temperature:
+    friendly_name: "Temperature"
+    icon_template: mdi:thermometer-lines
+    value_template: "{{ states.sensor.broadlink_sensor_temperature.state }}"
+    unit_of_measurement: "C"
+
+  clone__sensor__bedroom_main_temperature:
+    friendly_name: "Temperature"
+    icon_template: mdi:thermometer-lines
+    value_template: "{{ states.sensor.bedroom_main_temperature.state }}"
+    unit_of_measurement: "C"
+
+  clone__sensor__bedroom_main_humidity:
+    friendly_name: "Humidity"
+    icon_template: mdi:water-percent
+    value_template: "{{ states.sensor.bedroom_main_humidity.state }}"
+    unit_of_measurement: "%"
+
+
+  clone__sensor__bedroom_rowan_temperature:
+    friendly_name: "Temperature"
+    icon_template: mdi:thermometer-lines
+    value_template: "{{ states.sensor.bedroom_rowan_temperature.state }}"
+    unit_of_measurement: "C"
+
+  clone__sensor__bedroom_rowan_humidity:
+    friendly_name: "Humidity"
+    icon_template: mdi:water-percent
+    value_template: "{{ states.sensor.bedroom_rowan_humidity.state }}"
+    unit_of_measurement: "%"
+
+
+
+
+#  moon:
+#    friendly_name: "Moon"
+#    icon_template: "mdi:weather-night"
+#    value_template: "{{ states.moon }}"
+#
+#  battery_levels_ann:
+#  friendly_name: "Ann's Mobile"
+#  unit_of_measurement: "%"
+#  value_template: "{{ states.device_tracker.ann_zeroflte.attributes.battery }}"
+#  icon_template: >-
+#    {% set battery_level_ann = states.sensor.battery_levels_ann.state|default(0)|int %}
+#    {% set battery_round_ann = (battery_level_ann / 10) |int * 10 %}
+#    {% if battery_round_ann >= 100 %}
+#      mdi:battery
+#    {% elif battery_round_ann > 0 %}
+#      mdi:battery-{{ battery_round_ann }}
+#    {% else %}
+#      mdi:battery-alert
+#    {% endif %}
+

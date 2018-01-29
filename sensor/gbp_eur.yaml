@@ -1,0 +1,4 @@
+platform: fixer
+base: GBP
+target: EUR
+name: "GBP EUR"

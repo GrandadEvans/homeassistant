@@ -1,0 +1,5 @@
+platform: mjpeg
+mjpeg_url: "http://192.168.0.4/video.mjpg?mute"
+name: Garage
+username: !secret camera_garage_username
+password: !secret camera_garage_password

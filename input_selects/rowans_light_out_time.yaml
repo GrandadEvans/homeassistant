@@ -1,0 +1,14 @@
+rowans_light_out_time:
+  name: "Rowan's Light Out Time"
+  options:
+    - '18:00'
+    - '19:00'
+    - '20:00'
+    - '21:00'
+    - '22:00'
+    - '22:30'
+    - '23:00'
+    - '00:00'
+  initial: '20:00'
+  icon: mdi:hotel
+  #offset: '-00:10:00'
