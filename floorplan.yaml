@@ -1,0 +1,61 @@
+name: Demo Floorplan
+date_format: DD-MMM-YYYY
+image: /local/custom_ui/floorplan/drawing.svg
+stylesheet: /local/custom_ui/floorplan/floorplan.css
+warnings:                  # enable warnings (to find out why things might ot be working correctly)
+pan_zoom:
+groups:
+  - name: Remotes
+    entities:
+      - switch.remote__virgin_media__guide
+      - switch.remote__virgin_media__power
+      - switch.remote__virgin_media__red
+      - switch.remote__virgin_media__green
+      - switch.remote__virgin_media__blue
+      - switch.remote__virgin_media__yellow
+      - switch.remote__virgin_media__home
+      - switch.remote__virgin_media__tv
+      - switch.remote__virgin_media__up
+      - switch.remote__virgin_media__info
+      - switch.remote__virgin_media__back
+      - switch.remote__virgin_media__right
+      - switch.remote__virgin_media__down
+      - switch.remote__virgin_media__left
+      - switch.remote__virgin_media__ok
+      - switch.remote__virgin_media__subtitles
+      - switch.remote__virgin_media__volume_up
+      - switch.remote__virgin_media__volume_down
+      - switch.remote__virgin_media__channel_up
+      - switch.remote__virgin_media__channel_down
+      - switch.remote__virgin_media__my_shows
+      - switch.remote__virgin_media__thumbs_down
+      - switch.remote__virgin_media__thumbs_up
+      - switch.remote__virgin_media__mute
+      - switch.remote__virgin_media__record
+      - switch.remote__virgin_media__play
+      - switch.remote__virgin_media__pause
+      - switch.remote__virgin_media__rewind
+      - switch.remote__virgin_media__forward
+      - switch.remote__virgin_media__stop
+      - switch.remote__virgin_media__skip_forward
+      - switch.remote__virgin_media__skip_back
+      - switch.remote__virgin_media__slow_motion
+      - switch.remote__virgin_media__search
+      - switch.remote__virgin_media__1
+      - switch.remote__virgin_media__2
+      - switch.remote__virgin_media__3
+      - switch.remote__virgin_media__4
+      - switch.remote__virgin_media__5
+      - switch.remote__virgin_media__5
+      - switch.remote__virgin_media__6
+      - switch.remote__virgin_media__7
+      - switch.remote__virgin_media__8
+      - switch.remote__virgin_media__9
+      - switch.remote__virgin_media__0
+      - switch.remote__virgin_media__clear
+      - switch.remote__virgin_media__last_channel
+    states:
+      - state: 'on'
+        class: 'remote_button-on'
+      - state: 'off'
+        class: 'remote-button-off'
