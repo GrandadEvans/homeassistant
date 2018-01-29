@@ -53,3 +53,4 @@ input_number:        !include_dir_merge_named input_numbers/
 input_select:        !include_dir_merge_named input_selects/
 panel_iframe:        !include_dir_merge_named panel_iframes/
 alarm_control_panel: !include_dir_list alarm_control_panel/
+history_graph:       !include_dir_named history_graphs/
