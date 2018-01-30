@@ -1,0 +1,15 @@
+include_used_components: true
+arch: true
+distribution: true
+docker: true
+geo_city: true
+geo_country_code: true
+geo_country_name: true
+os_name: true
+os_version: true
+python_version: true
+timezone: true
+user_agent: true
+version: true
+virtualenv: true
+
