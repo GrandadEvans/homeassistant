@@ -1,0 +1,112 @@
+script.shut_rowans_bedroom_down_for_night:
+  icon: mdi:hotel
+
+scene.bedtime:
+  icon: mdi:hotel
+
+switch.xbox:
+  icon: mdi:xbox
+  friendly_name: X-Box
+
+switch.media_center:
+  icon: mdi:television-classic
+  friendly_name: Media Center
+  assumed_state: false
+
+switch.lava_lamp:
+  icon: mdi:lava-lamp
+
+switch.kettle:
+  icon: mdi:kettle
+  assumed_state: false
+
+switch.rowans_radio:
+  icon: mdi:boombox
+  assumed_state: false
+
+switch.scooter:
+  icon: mdi:wheelchair-accessibility
+
+light.kitchen:
+  friendly_name: Kitchen Light
+
+sensor.rowans_bedroom_temperature:
+  icon: mdi:thermometer-lines
+  hidden: true
+
+sensor.rowans_bedroom_humidity:
+  icon: mdi:water-percent
+  hidden: true
+
+sensor.broadlink_sensor_temperature:
+  hidden: true
+
+sensor.speedtest_download:
+  hidden: true
+
+sensor.speedtest_upload:
+  hidden: true
+
+sensor.speedtest_ping:
+  hidden: true
+
+switch.glass_cabinet:
+  icon: mdi:table-column
+
+light.wall_unit:
+  icon: mdi:locker-multiple
+
+light.cooking_area:
+  icon: mdi:stove
+
+light.dining_area:
+  icon: mdi:silverware
+
+zone.home:
+  radius: 200
+
+input_boolean.is_school_day:
+  icon: mdi:school
+
+sensor.met_office_feels_like_temperature:
+  icon: mdi:thermometer-lines
+
+sensor.met_office_probability_of_precipitation:
+  icon: mdi:water
+
+sensor.met_office_temperature:
+  icon: mdi:thermometer
+
+sensor.met_office_weather:
+  icon: mdi:cloud
+
+sensor.met_office_wind_speed:
+  icon: mdi:weather-windy
+
+sensor.met_office_wind_direction:
+  icon: mdi:compass
+
+binary_sensor.ping_binary_sensor:
+  device_class: connectivity
+
+sensor.clone__sensor__broadlink_sensor_temperature:
+  unit_of_measurement: °C
+
+sensor.clone__sensor__rowans_bedroom_temperature:
+  unit_of_measurement: °C
+
+automation.turn_rowans_lava_lamp_on:
+  initial_state: false
+
+switch.camera_garage:
+  hidden: true
+
+light.kitchen_strip_light:
+  icon: mdi:led-strip
+
+group.kitchen_lights:
+  domain: light
+  icon: mdi:light
+
+light.main_light:
+  initial_state: 'on'

@@ -1,0 +1,48 @@
+'1517265220535':
+  alias: Bedtime
+  sequence:
+  - data:
+      entity_id: light.cooking_area
+    service: light.turn_off
+  - data:
+      entity_id: light.dining_area
+    service: light.turn_off
+  - data:
+      entity_id: light.kitchen_strip_light
+    service: light.turn_off
+  - data:
+      entity_id: light.wall_unit
+    service: light.turn_on
+  - data:
+      entity_id: switch.media_center
+    service: switch.turn_off
+  - data:
+      entity_id: switch.remote__virgin_media__power
+    service: switch.turn_off
+  - delay: 00:00:01
+  - data:
+      entity_id: switch.remote__virgin_media__power
+    service: switch.turn_off
+  - data:
+      brightness: 125
+      entity_id: light.main_bedroom
+    service: light.turn_on
+  - data:
+      entity_id: light.main_light
+    service: light.turn_off
+  - data:
+      entity_id: light.johns_bedside_lamp
+    service: light.turn_on
+  - data:
+      entity_id: switch.remote__lg_monitor__power
+    service: switch.turn_off
+  - data:
+      entity_id: light.glass_cabinet
+    service: light.turn_off
+  - alias: ''
+    data: {}
+    service: alarm_control_panel.alarm_arm_night
+  - delay: 02:00:00
+  - data:
+      entity_id: light.landing_light
+    service: light.turn_off

@@ -1,1 +1,8 @@
-[]
+- action:
+  - service: persistent_notification.create
+  alias: BBC Breaking News
+  condition: []
+  id: '1517264039199'
+  trigger:
+  - platform: mqtt
+    topic: bbc_news/breaking

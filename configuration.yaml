@@ -7,6 +7,7 @@ homeassistant:
   time_zone:   Europe/London
   customize:   !include customize.yaml
 
+discovery:
 frontend:
   themes:            !include_dir_named themes/
 config:
@@ -30,11 +31,17 @@ http:
 
 
 
-updater:
-  include_used_components: true
+updater: !include updater.yaml
 
-discovery:
 conversation:
+#  intents:
+#    ShoppingListAddItem:
+#      - Add {item} to my shopping list
+#    boolean_test:
+#      sentence: "Turn everything off" # The phrase it will recognize
+#      action:
+#        - service: light.turn_off
+#          entity_id: light.wall_unit
 
 history:
 logbook:
@@ -61,9 +68,10 @@ binary_sensor:       !include_dir_list binary_sensor/
 device_tracker:      !include_dir_list device_tracker/
 logger:
   default: error
+  # Log levels: notset; debug; info; warn; warning; error; fatal; critical
   logs:
     homeassistant.components.camera: critical
-    homeassistant.components.broadlink: critical
+    homeassistant.components.switch: critical
 
 input_boolean:       !include_dir_merge_named input_booleans/
 input_number:        !include_dir_merge_named input_numbers/
@@ -75,3 +83,6 @@ media_player:        !include_dir_list media_players/
 notify:              !include_dir_list notify/
 joaoapps_join:       !include joaoapps_join.yaml
 tts:                 !include_dir_list tts_providers/
+panel_custom:        !include_dir_list panel_custom/
+rest_command:        !include_dir_merge_named rest_commands/
+scene:               !include_dir_list scenes/
