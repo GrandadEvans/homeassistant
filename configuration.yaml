@@ -62,9 +62,9 @@ sun:
 light: !include_dir_list lights/
 switch:              !include_dir_list switches/
 sensor:              !include_dir_list sensor/
-#android_ip_webcam:   !include_dir_list android_ip_webcam/
+android_ip_webcam:   !include_dir_list android_ip_webcam/
 binary_sensor:       !include_dir_list binary_sensor/
-#camera:              !include_dir_list cameras/
+camera:              !include_dir_list cameras/
 device_tracker:      !include_dir_list device_tracker/
 logger:
   default: error
