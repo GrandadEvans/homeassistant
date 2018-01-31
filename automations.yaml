@@ -48,4 +48,14 @@
   trigger:
   - at: 05:00:00
     platform: time
+- action:
+  - data:
+      entity_id: switch.lava_lamp
+    service: switch.turn_on
+  alias: Turn Rowan's Lava Lamp On (night)
+  condition: []
+  id: '1517286593693'
+  trigger:
+  - at: '12:00:00'
+    platform: time
 
