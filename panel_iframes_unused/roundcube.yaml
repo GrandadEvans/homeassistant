@@ -1,0 +1,4 @@
+roundcube:
+  title: Webmail
+  icon: mdi:email
+  url: !secret roundcube_url

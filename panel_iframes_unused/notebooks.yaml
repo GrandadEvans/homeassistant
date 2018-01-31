@@ -1,0 +1,4 @@
+notebooks:
+  title: Notebooks
+  icon: mdi:notebook
+  url: https://localhost:9999/tree?
