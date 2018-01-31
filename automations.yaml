@@ -17,4 +17,15 @@
   trigger:
   - at: '19:50:00'
     platform: time
+- action:
+  - service: script.1517281436557
+  alias: Rowan's Lights Out - Weekend
+  condition:
+  - condition: state
+    entity_id: input_boolean.is_school_day
+    state: 'off'
+  id: '1517284692661'
+  trigger:
+  - at: '20:50:00'
+    platform: time
 
