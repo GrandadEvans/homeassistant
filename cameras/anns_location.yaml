@@ -1,0 +1,6 @@
+# Example configuration.yaml entry.
+# Shows device_tracker.demo_paulus on a map.
+name: Ann
+platform: generic
+still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.ann_zeroflte.attributes.latitude }},{{ states.device_tracker.ann_zeroflte.attributes.longitude }}&zoom=14&size=500x500&maptype=hybrid&markers=color:blue%7Clabel:P%7C{{ states.device_tracker.ann_zeroflte.attributes.latitude }},{{ states.device_tracker.ann_zeroflte.attributes.longitude }}
+limit_refetch_to_url_change: true
