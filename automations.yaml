@@ -58,4 +58,14 @@
   trigger:
   - at: '12:00:00'
     platform: time
+- action:
+  - data:
+      entity_id: switch.scooter
+    service: switch.turn_off
+  alias: Turn the scooter off at 04:00
+  condition: []
+  id: '1517289206005'
+  trigger:
+  - at: 04:00:00
+    platform: time
 
