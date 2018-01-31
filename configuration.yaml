@@ -72,6 +72,8 @@ logger:
   logs:
     homeassistant.components.camera: critical
     homeassistant.components.switch: critical
+    homeassistant.components.python_script: debug
+    homeassistant.components.websocket_api: critical
 
 input_boolean:       !include_dir_merge_named input_booleans/
 input_number:        !include_dir_merge_named input_numbers/
@@ -86,3 +88,5 @@ tts:                 !include_dir_list tts_providers/
 panel_custom:        !include_dir_list panel_custom/
 rest_command:        !include_dir_merge_named rest_commands/
 scene:               !include_dir_list scenes/
+
+python_script:
