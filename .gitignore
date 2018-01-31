@@ -12,3 +12,4 @@ plex.conf
 sms.yaml
 sms.html
 privkey.pem
+*__pycache__*
