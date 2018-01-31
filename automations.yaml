@@ -6,3 +6,4 @@
   trigger:
   - platform: mqtt
     topic: bbc_news/breaking
+
