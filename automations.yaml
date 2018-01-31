@@ -6,4 +6,15 @@
   trigger:
   - platform: mqtt
     topic: bbc_news/breaking
+- action:
+  - service: script.1517281436557
+  alias: Rowan's Lights Out - School Night
+  condition:
+  - condition: state
+    entity_id: input_boolean.is_school_day
+    state: 'on'
+  id: '1517279821891'
+  trigger:
+  - at: '19:50:00'
+    platform: time
 
