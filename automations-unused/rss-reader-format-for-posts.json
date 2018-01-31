@@ -1,0 +1,50 @@
+{
+    'title': "Fire and Fury: Trump says book is 'fiction' and author a 'fraud'",
+    'title_detail': {
+        'type': 'text/plain',
+        'language': None,
+        'base': 'https://feeds.bbci.co.uk/news/world/rss.xml',
+        'value': "Fire and Fury: Trump says book is 'fiction' and author a 'fraud'"
+    },
+    'summary': "The US president rejects a book's claims about his mental health and insists he is stable and smart.",
+    'summary_detail': {
+        'type': 'text/html',
+        'language': None,
+        'base': 'https://feeds.bbci.co.uk/news/world/rss.xml',
+        'value': "The US president rejects a book's claims about his mental health and insists he is stable and smart."
+    },
+    'links': [
+        {
+            'rel': 'alternate',
+            'type': 'text/html',
+            'href': 'http://www.bbc.co.uk/news/world-us-canada-42589860'
+        }
+    ],
+    'link': 'http://www.bbc.co.uk/news/world-us-canada-42589860',
+    'id': 'http://www.bbc.co.uk/news/world-us-canada-42589860',
+    'guidislink': False,
+    'published': 'Sat, 06 Jan 2018 19:16:32 GMT',
+    'published_parsed': time.struct_time(tm_year=2018,
+    tm_mon=1,
+    'id': 'http://www.bbc.co.uk/news/world-us-canada-42589860',
+    'guidislink': False,
+    'published': 'Sat, 06 Jan 2018 19:16:32 GMT',
+    'published_parsed': time.struct_time(tm_year=2018,
+    tm_mon=1,
+    tm_mday=6,
+    tm_hour=19,
+    tm_min=16,
+    tm_sec=32,
+    tm_wday=5,
+    tm_yday=6,
+    tm_isdst=0),
+    'media_thumbnail': [
+        {
+            'width': '976',
+            'height': '549',
+            'url': 'http://c.files.bbci.co.uk/3D67/production/_99491751_mediaitem99489647.jpg'
+        }
+    ],
+    'href': '',
+    'feed_url': 'https://feeds.bbci.co.uk/news/world/rss.xml'
+}

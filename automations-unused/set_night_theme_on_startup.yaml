@@ -1,0 +1,12 @@
+alias: 'Set Night theme at startup'
+initial_state: 'on'
+trigger:
+- platform: homeassistant
+  event: start
+condition:
+  condition: sun
+  after: sunset
+action:
+- service: frontend.set_theme
+  data:
+    name: darkblue

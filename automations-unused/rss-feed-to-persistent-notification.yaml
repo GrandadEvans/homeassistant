@@ -1,0 +1,15 @@
+trigger: 
+  platform: event
+  event_type: feedreader
+action:
+  service: persistent_notification.create
+  data_template:
+    title: "Just in... {{ trigger.event.data.title }}"
+    message: "
+    {{ trigger.event.data.summary }}\n
+    \n
+    {{ trigger.event.data.link }}\n
+    \n
+    {{ strptime(trigger.event.data.published, '%a, %d %b %Y %H:%M:%S GMT') | timestamp_custom('%H:%M') }}
+    "
+    notification_id: "{{ trigger.event.data.title }}"

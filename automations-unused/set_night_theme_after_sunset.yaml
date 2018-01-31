@@ -1,0 +1,8 @@
+alias: Set Night Mode Theme after Sunset
+trigger:
+- platform: sun
+  event: sunset
+action:
+- service: frontend.set_theme
+  data:
+    name: darkblue
