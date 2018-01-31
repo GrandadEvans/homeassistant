@@ -74,6 +74,8 @@ logger:
     homeassistant.components.switch: critical
     homeassistant.components.channel_changer: debug
     homeassistant.components.websocket_api: critical
+    homeassistant.components.sensor.broadlink: critical
+    homeassistant.components.sensor_broadlink: critical
 
 input_boolean:       !include_dir_merge_named input_booleans/
 input_number:        !include_dir_merge_named input_numbers/
