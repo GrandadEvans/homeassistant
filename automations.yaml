@@ -78,4 +78,21 @@
   trigger:
   - at: '22:00:00'
     platform: time
+- action:
+  - data:
+      entity_id: switch.kettle
+    service: switch.turn_on
+  - data:
+      brightness: 50
+      entity_id: light.landing_light
+    service: light.turn_on
+  alias: Wake-up (school day)
+  condition:
+  - condition: state
+    entity_id: input_boolean.is_school_day
+    state: 'yes'
+  id: '1517289448396'
+  trigger:
+  - at: 05:30:00
+    platform: time
 
